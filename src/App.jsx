@@ -1,5 +1,5 @@
 import asideimg from './assets/img/arrival.png'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter , Routes, Route } from 'react-router-dom'
 import HeroBanner from './components/heroBanner';
 import Offersection from './components/OfferSection';
 import ShopCategory from './components/shopCategory';
@@ -24,7 +24,7 @@ import AdminLayout from './AdminLayout/admlayout';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter >
        
         <Routes>
            <Route path="/" element={
@@ -65,7 +65,7 @@ function App() {
         
 
 
-      </BrowserRouter>
+      </HashRouter >
     </>
   )
 }
