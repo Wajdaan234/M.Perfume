@@ -18,6 +18,7 @@ import MainLayout from './mainlayout';
 
 import Dashboard from './AdminLayout/pages/dashboard';
 import AdminLayout from './AdminLayout/admlayout';
+import Message from './AdminLayout/pages/messages';
 
 
 
@@ -57,7 +58,7 @@ function App() {
             <Route path="/admin" element={<AdminLayout/>}>
               <Route index element={<Dashboard />} />
               
-              <Route path="/admin/products" element={<h1>Product Page</h1>} />
+              <Route path="/admin/Message" element={<Message />} />
               <Route path="/admin/settings" element={<h1>Settings Page</h1>} />
           </Route>
         </Routes>
